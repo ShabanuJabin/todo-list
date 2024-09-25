@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* Changed to a more modern font */
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #b8cad1, #120c5f);
+    /* Soft pink gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 540px;
+}
+
+.todo-app {
+    background: rgb(204, 212, 219);
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Added shadow for depth */
+}
+
+.todo-app h2 {
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    flex: 1;
+    border: 2px solid #5536e2;
+    /* Added border color */
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4266c1;
+    /* Darker shade on focus */
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #314dcc;
+    /* Button background color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #473696;
+    /* Darker shade on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    /* Added margin for spacing */
+}
+
+ul li {
+    font-size: 17px;
+    padding: 12px 8px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #abbbd3;
+    /* Light pink for tasks */
+    color: #333;
+    /* Dark text color for contrast */
+    border-radius: 30px;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+ul li.checked {
+    color: grey;
+    text-decoration: line-through;
+    background-color: #667fc0;
+    /* Light grey for completed tasks */
+}
+
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    font-size: 22px;
+    color: white;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2c52cd;
+    /* Cross mark background color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+ul li span:hover {
+    background-color: #e63946;
+    /* Darker shade on hover */
+}
